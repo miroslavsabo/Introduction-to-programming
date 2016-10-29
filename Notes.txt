@@ -1,3 +1,13 @@
+### Installing R+Rstudio
+1. First, download and install R from http://cran.at.r-project.org/ (download R for windows/base/download r xyz for windows). 
+2. Then, download and install R Studio from https://www.rstudio.com/products/rstudio/download3/ (select version for your OS under the 'Installers' section). 
+
+
+
+### Why to learn programming
+* it's fun
+* automating things
+* salaries
 
 
 
@@ -5,6 +15,27 @@
 markup: HTML
 declarative: SQL
 statistical: R
+...
+
+
+
+### SQL
+* much better approach than working with files
+* only for tabular data
+* no plotting, no advanced analytics
+* data may not live in your computer
+* more users may  work with the same data at the same time
+* database = set of (related) tables
+
+
+
+### HTML, CSS, Javascript, PHP
+...
+
+
+
+### R
+* the most popular proggramming language for data analysis
 
 
 
@@ -15,3 +46,7 @@ https://www.coursera.org/
 
 # Question and answers (QA)
 http://stackoverflow.com/
+
+# Learn from the best
+https://www.kaggle.com/ # competitions
+... # blogs

@@ -1,5 +1,12 @@
 # Variables ---------------------------------------------------------------
 
+### variable, assignment, printing
+s <- "Hello World!" # string "Hello World!" is assigned to variable 's'
+print(s) # printing what's inside s
+s # alternative printing
+
+
+
 ### primitive types
 
 # integer
@@ -28,9 +35,9 @@ df <- data.frame(Name = c("John", "Marry"), Age = c(10, 12))
 
 # Functions ---------------------------------------------------------------
 
-age <- c(53, 14, 92)
-mean(age)
-help(mean)
+age <- c(53, 14, 92) # getting some data
+mean(age) # calculating mean of all data with the 'mean' function
+help(mean) # getting more info about the function
 
 
 
@@ -49,3 +56,11 @@ library(readr) # load library 'readr', so now we can use all its functions (e.g.
 library(readr)
 data <- read_delim("~/Documents/TOP/Introduction-to-programming/data/movies.csv", delim = ";")
 data
+
+
+
+# Looping -----------------------------------------------------------------
+
+for (value in c(1, 2, 3)) {
+  print(value)
+}
