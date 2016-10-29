@@ -1,7 +1,7 @@
 # Setup -------------------------------------------------------------------
 
 # setting working directory
-setwd("~/Documents/TOP/Introduction to programming/")
+setwd("~/Documents/TOP/Introduction-to-programming/")
 
 # loading necessary libraries
 library(readr)
@@ -53,6 +53,12 @@ FROM data
 WHERE year >= 2000
 GROUP BY year
   " ))
+
+# adding columns
+...
+
+# quering two tables
+...
 
 
 

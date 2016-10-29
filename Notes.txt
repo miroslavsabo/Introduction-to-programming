@@ -1,6 +1,6 @@
 ### Installing R+Rstudio
-1. First, download and install R from http://cran.at.r-project.org/ (download R for windows/base/download r xyz for windows). 
-2. Then, download and install R Studio from https://www.rstudio.com/products/rstudio/download3/ (select version for your OS under the 'Installers' section). 
+1. First, download and install R from http://cran.at.r-project.org/ (download R for windows/base/download r xyz for windows).
+2. Then, download and install R Studio from https://www.rstudio.com/products/rstudio/download3/ (select version for your OS under the 'Installers' section).
 
 
 
@@ -8,12 +8,13 @@
 * it's fun
 * automating things
 * salaries
+* no cost
 
 
 
 ### Different types of languages:
 markup: HTML
-declarative: SQL
+database/declarative: SQL
 statistical: R
 ...
 
@@ -30,12 +31,13 @@ statistical: R
 
 
 ### HTML, CSS, Javascript, PHP
-...
+* web development
+* client, server, DDOS attack
 
 
 
 ### R
-* the most popular proggramming language for data analysis
+* the most popular programming language for data analysis
 
 
 
@@ -48,5 +50,5 @@ https://www.coursera.org/
 http://stackoverflow.com/
 
 # Learn from the best
-https://www.kaggle.com/ # competitions
+https://www.kaggle.com/ # programming competitions
 ... # blogs
