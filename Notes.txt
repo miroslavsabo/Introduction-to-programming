@@ -1,0 +1,17 @@
+
+
+
+### Different types of languages:
+markup: HTML
+declarative: SQL
+statistical: R
+
+
+
+### Tips
+
+# Massive Open Online Course (MOOC)
+https://www.coursera.org/
+
+# Question and answers (QA)
+http://stackoverflow.com/
