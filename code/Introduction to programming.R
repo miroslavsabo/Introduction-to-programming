@@ -50,7 +50,7 @@ library(readr) # load library 'readr', so now we can use all its functions (e.g.
 
 
 
-# IO ----------------------------------------------------------------------
+# Input/Output (IO) ----------------------------------------------------------------------
 
 # reading data from disk into R
 library(readr)
@@ -62,5 +62,5 @@ data
 # Looping -----------------------------------------------------------------
 
 for (value in c(1, 2, 3)) {
-  print(value)
+  print(value * 10)
 }
