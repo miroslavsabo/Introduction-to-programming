@@ -12,7 +12,7 @@ s # alternative printing
 # integer
 i <- 5 
 
-# decimal
+# decimal, double, float
 f <- -4.12 
 
 # string
@@ -35,8 +35,8 @@ df <- data.frame(Name = c("John", "Marry"), Age = c(10, 12))
 
 # Functions ---------------------------------------------------------------
 
-age <- c(53, 14, 92) # getting some data
-mean(age) # calculating mean of all data with the 'mean' function
+age <- c(53, 14, NA) # getting some data
+mean(age, na.rm = FALSE) # calculating mean of all data with the 'mean' function
 help(mean) # getting more info about the function
 
 
@@ -46,7 +46,7 @@ help(mean) # getting more info about the function
 # Some special functions are nor available automatically. 
 # This is because they live in special 'libraries'.
 # So, before we use such function, we must first load the library where the function lives.
-library(readr) # load library 'readr', so now we can use all its functions (e.g. 'read_delim')
+library(ggplot2) # load library 'readr', so now we can use all its functions (e.g. 'read_delim')
 
 
 
@@ -54,13 +54,13 @@ library(readr) # load library 'readr', so now we can use all its functions (e.g.
 
 # reading data from disk into R
 library(readr)
-data <- read_delim("~/Documents/TOP/Introduction-to-programming/data/movies.csv", delim = ";")
+data <- read_delim("~/Documents/TOP/GIT/Introduction-to-programming/data/movies.csv", delim = ";")
 data
 
 
 
 # Looping -----------------------------------------------------------------
 
-for (value in c(1, 2, 3)) {
-  print(value * 10)
+for (x in c(1, 2, 3, 10)) {
+  print(x / 10)
 }

@@ -1,7 +1,7 @@
 # Setup -------------------------------------------------------------------
 
 # setting working directory
-setwd("~/Documents/TOP/Introduction-to-programming/")
+setwd("~/Documents/TOP/GIT/Introduction-to-programming/")
 
 # loading libraries
 library(sqldf)
@@ -28,7 +28,7 @@ GROUP BY year
 # plotting data -----------------------------------------------------------
 
 g <- ggplot(movies_agg, aes(x = year, y = n)) + geom_bar(stat = "identity")
-g
+print(g)
 
 # saving plot to disk
 ggsave(g, file="results/movies by year.pdf", width = 10)
@@ -37,8 +37,13 @@ ggsave(g, file="results/movies by year.pdf", width = 10)
 
 # Advanced analytics ------------------------------------------------------
 
-...
+# Create the tree.
+library(rpart)
+output.tree <- rpart(Survived ~ Age + Sex + PClass, data = titanic)
 
+# Plot the tree.
+plot(output.tree)
+text(output.tree, use.n = TRUE)
 
 
 # advanced plotting -----------------------------------------------

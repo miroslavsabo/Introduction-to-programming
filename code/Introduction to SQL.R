@@ -1,7 +1,7 @@
 # Setup -------------------------------------------------------------------
 
 # setting working directory
-setwd("~/Documents/TOP/Introduction-to-programming/")
+setwd("~/Documents/TOP/GIT/Introduction-to-programming/")
 
 # loading necessary libraries
 library(readr)
@@ -23,25 +23,26 @@ FROM data
 
 # filtering columns
 tbl_df(sqldf( "
-SELECT title, rating from data
+SELECT title, rating 
+FROM data
   " ))
 
 # filtering rows
 tbl_df(sqldf( "
 SELECT *
 FROM data
-WHERE rating > 9.9
+WHERE round(rating, 0) = 10
   " ))
 
 # summarising columns
 tbl_df(sqldf( "
-SELECT avg(rating)
+SELECT avg(rating), avg(length)
 FROM data
   " ))
 
 # grouping data and getting per group summaries
-tbl_df(sqldf( "
-SELECT year, count(year)
+rating_by_year <- tbl_df(sqldf( "
+SELECT year, avg(rating)
 FROM data
 GROUP BY year
   " ))
@@ -64,6 +65,9 @@ GROUP BY year
 
 # Trash -------------------------------------------------------------------
 
-movies %>% write.table("data/movies.csv", row.names = FALSE, sep = ";", na = "")
+write.table(rating_by_year, "data/rating_by_year.csv", row.names = FALSE, sep = ";", na = "")
 
+rating_by_year %>% 
+  ggplot(aes(x = year, y = `avg(rating)`, colour = "red")) + 
+  geom_point() + geom_line()
 
