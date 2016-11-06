@@ -18,6 +18,9 @@ f <- -4.12
 # string
 s <- "Hello world!" 
 
+# other
+#date, datetime, factor, ...
+
 
 
 ### compound types
@@ -35,8 +38,8 @@ df <- data.frame(Name = c("John", "Marry"), Age = c(10, 12))
 
 # Functions ---------------------------------------------------------------
 
-age <- c(53, 14, NA) # getting some data
-mean(age, na.rm = FALSE) # calculating mean of all data with the 'mean' function
+age <- c(53, 14, 3) # getting some data
+mean(age) # calculating mean of all data with the 'mean' function
 help(mean) # getting more info about the function
 
 
@@ -56,6 +59,9 @@ library(ggplot2) # load library 'readr', so now we can use all its functions (e.
 library(readr)
 data <- read_delim("~/Documents/TOP/GIT/Introduction-to-programming/data/movies.csv", delim = ";")
 data
+
+# exporting data from R to disk
+write.table(data, "trash/data_from_r.csv", row.names = FALSE, sep = ";", na = "")
 
 
 

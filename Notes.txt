@@ -1,7 +1,7 @@
 ### Why to learn programming
 * it's fun
 * automating things
-* salaries
+* salary
 * no cost
 
 

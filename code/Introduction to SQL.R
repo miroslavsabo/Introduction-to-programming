@@ -31,12 +31,26 @@ FROM data
 tbl_df(sqldf( "
 SELECT *
 FROM data
-WHERE round(rating, 0) = 10
+WHERE rating = 10
+  " ))
+
+# filtering first 3 rows
+tbl_df(sqldf( "
+SELECT *
+FROM data
+LIMIT 3
+  " ))
+
+# sorting data
+tbl_df(sqldf( "
+SELECT *
+FROM data
+ORDER BY rating desc
   " ))
 
 # summarising columns
 tbl_df(sqldf( "
-SELECT avg(rating), avg(length)
+SELECT avg(rating)
 FROM data
   " ))
 
